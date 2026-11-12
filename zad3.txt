@@ -1,0 +1,52 @@
+vboxuser@ubuntu26:~/Documents$ mkdir Ekipen_Proekt
+vboxuser@ubuntu26:~/Documents$ cd Ekipen_Proekt
+vboxuser@ubuntu26:~/Documents/Ekipen_Proekt$ mkdir Documenti
+vboxuser@ubuntu26:~/Documents/Ekipen_Proekt$ mkdir Dnevnik
+vboxuser@ubuntu26:~/Documents/Ekipen_Proekt$ mkdir Backup
+vboxuser@ubuntu26:~/Documents/Ekipen_Proekt$ ls
+Backup  Dnevnik  Documenti
+vboxuser@ubuntu26:~/Documents/Ekipen_Proekt$ cd Documenti
+vboxuser@ubuntu26:~/Documents/Ekipen_Proekt/Documenti$ touch ekip.txt
+vboxuser@ubuntu26:~/Documents/Ekipen_Proekt/Documenti$ touch plan.txt
+vboxuser@ubuntu26:~/Documents/Ekipen_Proekt/Documenti$ touch pravila.txt
+vboxuser@ubuntu26:~/Documents/Ekipen_Proekt/Documenti$ nano ekip.txt
+vboxuser@ubuntu26:~/Documents/Ekipen_Proekt/Documenti$ nano pravila.txt
+vboxuser@ubuntu26:~/Documents/Ekipen_Proekt/Documenti$ nano plan.txt
+vboxuser@ubuntu26:~/Documents/Ekipen_Proekt/Documenti$ ls
+ekip.txt  plan.txt  pravila.txt
+vboxuser@ubuntu26:~/Documents/Ekipen_Proekt/Documenti$ cp ekip.txt ../Backup/
+vboxuser@ubuntu26:~/Documents/Ekipen_Proekt/Documenti$ cp plan.txt ../Backup/
+vboxuser@ubuntu26:~/Documents/Ekipen_Proekt/Documenti$ cp pravila.txt ../Backup/
+vboxuser@ubuntu26:~/Documents/Ekipen_Proekt/Documenti$ cd ..
+vboxuser@ubuntu26:~/Documents/Ekipen_Proekt$ cd Dnevnik
+vboxuser@ubuntu26:~/Documents/Ekipen_Proekt/Dnevnik$ touch den1.txt
+vboxuser@ubuntu26:~/Documents/Ekipen_Proekt/Dnevnik$ nano den1.txt
+vboxuser@ubuntu26:~/Documents/Ekipen_Proekt/Dnevnik$ cp den1.txt den2.txt
+vboxuser@ubuntu26:~/Documents/Ekipen_Proekt/Dnevnik$ nano den2.txt
+vboxuser@ubuntu26:~/Documents/Ekipen_Proekt/Dnevnik$ cd ..
+vboxuser@ubuntu26:~/Documents/Ekipen_Proekt$ cd Backup
+vboxuser@ubuntu26:~/Documents/Ekipen_Proekt/Backup$ mkdir Dnevnici
+vboxuser@ubuntu26:~/Documents/Ekipen_Proekt/Backup$ cp ../Dnevnik/den1.txt Dnevnici/
+vboxuser@ubuntu26:~/Documents/Ekipen_Proekt/Backup$ cp ../Dnevnik/den2.txt Dnevnici/
+vboxuser@ubuntu26:~/Documents/Ekipen_Proekt/Backup$ cd ..
+vboxuser@ubuntu26:~/Documents/Ekipen_Proekt$ cd Documenti
+vboxuser@ubuntu26:~/Documents/Ekipen_Proekt/Documenti$ nano plan.txt
+vboxuser@ubuntu26:~/Documents/Ekipen_Proekt/Documenti$ nano pravila.txt
+vboxuser@ubuntu26:~/Documents/Ekipen_Proekt/Documenti$ cp plan.txt ../Backup/plan_obnoven.txt
+vboxuser@ubuntu26:~/Documents/Ekipen_Proekt/Documenti$ cd ..
+vboxuser@ubuntu26:~/Documents/Ekipen_Proekt$ ls -R
+.:
+Backup  Dnevnik  Documenti
+
+./Backup:
+Dnevnici  ekip.txt  plan.txt  plan_obnoven.txt  pravila.txt
+
+./Backup/Dnevnici:
+den1.txt  den2.txt
+
+./Dnevnik:
+den1.txt  den2.txt
+
+./Documenti:
+ekip.txt  plan.txt  pravila.txt
+

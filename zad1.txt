@@ -1,0 +1,39 @@
+vboxuser@ubuntu26:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos  snap
+vboxuser@ubuntu26:~$ cd ~/Documents
+vboxuser@ubuntu26:~/Documents$ ls
+1  3
+vboxuser@ubuntu26:~/Documents$ mkdir Linux_Uroci
+vboxuser@ubuntu26:~/Documents$ cd Linux_Uroci
+vboxuser@ubuntu26:~/Documents/Linux_Uroci$ mkdir Teoria Praktika
+vboxuser@ubuntu26:~/Documents/Linux_Uroci$ cd Teoria
+vboxuser@ubuntu26:~/Documents/Linux_Uroci/Teoria$ mkdir komandi.txt
+vboxuser@ubuntu26:~/Documents/Linux_Uroci/Teoria$ mkdir uprajnenia.txt
+vboxuser@ubuntu26:~/Documents/Linux_Uroci/Teoria$ ls
+komandi.txt  uprajnenia.txt
+vboxuser@ubuntu26:~/Documents/Linux_Uroci/Teoria$ cd
+vboxuser@ubuntu26:~$ cd ~/Documents
+vboxuser@ubuntu26:~/Documents$ cd Linux_Uroci
+vboxuser@ubuntu26:~/Documents/Linux_Uroci$ cd Teoria
+vboxuser@ubuntu26:~/Documents/Linux_Uroci/Teoria$ cp uprajnenia.txt ../Praktika/
+cp: -r not specified; omitting directory 'uprajnenia.txt'
+vboxuser@ubuntu26:~/Documents/Linux_Uroci/Teoria$ rmdir uprajnenia.txt
+vboxuser@ubuntu26:~/Documents/Linux_Uroci/Teoria$ touch uprajnenia.txt
+vboxuser@ubuntu26:~/Documents/Linux_Uroci/Teoria$ cp uprajnenia.txt ../Praktika/
+vboxuser@ubuntu26:~/Documents/Linux_Uroci/Teoria$ cd ~
+vboxuser@ubuntu26:~$ cd Documents
+vboxuser@ubuntu26:~/Documents$ cd Linux_Uroci
+vboxuser@ubuntu26:~/Documents/Linux_Uroci$ cd Ptaktika
+bash: cd: Ptaktika: No such file or directory
+vboxuser@ubuntu26:~/Documents/Linux_Uroci$ ls
+Praktika  Teoria
+vboxuser@ubuntu26:~/Documents/Linux_Uroci$ cd Praktika
+vboxuser@ubuntu26:~/Documents/Linux_Uroci/Praktika$ ls
+uprajnenia.txt
+vboxuser@ubuntu26:~/Documents/Linux_Uroci/Praktika$ touch otgovori.txt
+vboxuser@ubuntu26:~/Documents/Linux_Uroci/Praktika$ ls
+otgovori.txt  uprajnenia.txt
+vboxuser@ubuntu26:~/Documents/Linux_Uroci/Praktika$ cd ..
+vboxuser@ubuntu26:~/Documents/Linux_Uroci$ ls
+Praktika  Teoria
+

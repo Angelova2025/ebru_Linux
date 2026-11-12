@@ -1,0 +1,59 @@
+vboxuser@ubuntu26:~$ cd Documents
+vboxuser@ubuntu26:~/Documents$ ls
+Linux_Uroci
+vboxuser@ubuntu26:~/Documents$ mkdir Uchilishten_Proekt
+vboxuser@ubuntu26:~/Documents$ cd Uchilishten_Proekt
+vboxuser@ubuntu26:~/Documents/Uchilishten_Proekt$ mkdir Materiali Predavane Arhiv
+vboxuser@ubuntu26:~/Documents/Uchilishten_Proekt$ cd Materiali
+vboxuser@ubuntu26:~/Documents/Uchilishten_Proekt/Materiali$ touch plan.txt 
+vboxuser@ubuntu26:~/Documents/Uchilishten_Proekt/Materiali$ touch ekip.txt
+vboxuser@ubuntu26:~/Documents/Uchilishten_Proekt/Materiali$ touch zadachi.txt
+vboxuser@ubuntu26:~/Documents/Uchilishten_Proekt/Materiali$ ls
+ekip.txt  plan.txt  zadachi.txt
+vboxuser@ubuntu26:~/Documents/Uchilishten_Proekt/Materiali$ cp plan.txt ../Predavane/plan_final.txt
+vboxuser@ubuntu26:~/Documents/Uchilishten_Proekt/Materiali$ cd Predavane
+bash: cd: Predavane: No such file or directory
+vboxuser@ubuntu26:~/Documents/Uchilishten_Proekt/Materiali$ cd ..
+vboxuser@ubuntu26:~/Documents/Uchilishten_Proekt$ cd Predavane
+vboxuser@ubuntu26:~/Documents/Uchilishten_Proekt/Predavane$ ls
+plan_final.txt
+vboxuser@ubuntu26:~/Documents/Uchilishten_Proekt/Predavane$ touch proverka.txt
+vboxuser@ubuntu26:~/Documents/Uchilishten_Proekt/Predavane$ cp plan_final.txt ../Arhiv/
+vboxuser@ubuntu26:~/Documents/Uchilishten_Proekt/Predavane$ cd ..
+vboxuser@ubuntu26:~/Documents/Uchilishten_Proekt$ cd Materiali
+vboxuser@ubuntu26:~/Documents/Uchilishten_Proekt/Materiali$ cp ekip.txt ../Arhiv/ekip_backup.txt
+vboxuser@ubuntu26:~/Documents/Uchilishten_Proekt/Materiali$ cd ..
+vboxuser@ubuntu26:~/Documents/Uchilishten_Proekt$ cd Arhiv
+vboxuser@ubuntu26:~/Documents/Uchilishten_Proekt/Arhiv$ ls
+ekip_backup.txt  plan_final.txt
+vboxuser@ubuntu26:~/Documents/Uchilishten_Proekt/Arhiv$ mkdir Dopalnitelno
+vboxuser@ubuntu26:~/Documents/Uchilishten_Proekt/Arhiv$ cd ..
+vboxuser@ubuntu26:~/Documents/Uchilishten_Proekt$ cd Predavane
+vboxuser@ubuntu26:~/Documents/Uchilishten_Proekt/Predavane$ cd ..
+vboxuser@ubuntu26:~/Documents/Uchilishten_Proekt$ cd Arhiv
+vboxuser@ubuntu26:~/Documents/Uchilishten_Proekt/Arhiv$ cp ..
+cp: missing destination file operand after '..'
+Try 'cp --help' for more information.
+vboxuser@ubuntu26:~/Documents/Uchilishten_Proekt/Arhiv$ cd ..
+vboxuser@ubuntu26:~/Documents/Uchilishten_Proekt$ cd Predavane
+vboxuser@ubuntu26:~/Documents/Uchilishten_Proekt/Predavane$ cp proverka.txt ../Dopalnitelno
+vboxuser@ubuntu26:~/Documents/Uchilishten_Proekt/Predavane$ cd ..
+vboxuser@ubuntu26:~/Documents/Uchilishten_Proekt$ cd Arhiv
+vboxuser@ubuntu26:~/Documents/Uchilishten_Proekt/Arhiv$ cp ../Predavane/proverka.txt Dopalnitelno/
+vboxuser@ubuntu26:~/Documents/Uchilishten_Proekt/Arhiv$ cd ..
+vboxuser@ubuntu26:~/Documents/Uchilishten_Proekt$ ls -R
+.:
+Arhiv  Dopalnitelno  Materiali  Predavane
+
+./Arhiv:
+Dopalnitelno  ekip_backup.txt  plan_final.txt
+
+./Arhiv/Dopalnitelno:
+proverka.txt
+
+./Materiali:
+ekip.txt  plan.txt  zadachi.txt
+
+./Predavane:
+plan_final.txt  proverka.txt
+
